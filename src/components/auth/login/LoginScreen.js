@@ -36,7 +36,8 @@ export default class LoginScreen extends React.Component {
         } else if (password.trim().length < 6 || password.trim().length > 15) {
             alert(Strings.PASSWORD_LEN_MSG)
         } else {
-            this.props.navigation.navigate('SignupScreen')
+            this.props.navigation.navigate('home')
+
         }
     }
 
@@ -111,6 +112,19 @@ export default class LoginScreen extends React.Component {
 
                         </View>
                     </TouchableWithoutFeedback>
+
+                    <Text style={{alignSelf:'center',margin:20}}>{'OR'}</Text>
+
+                    <TouchableWithoutFeedback
+                        onPress={() => this.props.navigation.navigate('SignupScreen')}
+                    >
+                        <View style={[commonStyles.buttonStyle , {marginTop: 0}]}>
+
+                            <Text style={commonStyles.buttonTextStyle}>{'Sign Up' + ' '}</Text>
+
+                        </View>
+                    </TouchableWithoutFeedback>
+
 
                 </View>
             </ScrollView>

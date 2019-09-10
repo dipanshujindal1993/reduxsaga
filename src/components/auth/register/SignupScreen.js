@@ -29,8 +29,8 @@ export default class SignupScreen extends React.Component {
     }
 
     handleValidations() {
-        this.props.navigation.navigate('home')
-        return
+
+
         const {username , email , phone , password} = this.state
 
         if (username === undefined || username === '') {
@@ -48,7 +48,7 @@ export default class SignupScreen extends React.Component {
         } else if (password.trim().length < 6 || password.trim().length > 15) {
             alert(Strings.PASSWORD_LEN_MSG)
         } else {
-
+            this.props.navigation.navigate('home')
         }
     }
 

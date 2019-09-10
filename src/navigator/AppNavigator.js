@@ -57,7 +57,7 @@ const RootNavigator = createStackNavigator({
 
 
 } , {
-    initialRouteName: 'home',
+    initialRouteName: 'PreviewScreen',
     headerMode:'none'
 });
 

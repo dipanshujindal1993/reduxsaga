@@ -26,7 +26,11 @@ export default class PreviewScreen extends React.Component {
 
                 <TouchableWithoutFeedback
                     style={styles.bottomStyle}
-                    onPress={() => this.props.navigation.navigate('LoginScreen')}
+                    onPress={() => {
+
+                        this.props.navigation.replace('LoginScreen')
+
+                    }}
                 >
                     <View style={styles.bottomStyle}>
 

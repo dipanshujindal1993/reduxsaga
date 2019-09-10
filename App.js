@@ -21,6 +21,7 @@ import AppNavigator from "./src/navigator/AppNavigator";
 class App extends React.Component {
 
     componentDidMount(): void {
+        console.disableYellowBox = true;
         SplashScreen.hide()
     }
 

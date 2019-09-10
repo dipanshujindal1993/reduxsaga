@@ -32,14 +32,13 @@ module.exports = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor:'red',
+       // backgroundColor:'red',
         paddingBottom:10
     },
     slide1: {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#eb1bb2',
         paddingBottom:10
     },
 
@@ -47,7 +46,6 @@ module.exports = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#9be54d',
         paddingBottom:20
     },
 
@@ -55,7 +53,6 @@ module.exports = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#4755d9',
         marginBottom:40
     },
 
